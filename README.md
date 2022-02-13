@@ -1,2 +1,2 @@
 # avaya-1100-cfg-generator
-Script to generate USER_CONFIG file to auto login Avaya 1120 and 1140 phones.
+This python script will take a CSV input with MAC address and Phone numbers and generated individual files in the format SIP[MAC].cfg
