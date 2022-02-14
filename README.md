@@ -10,6 +10,9 @@ These other files to pull would include phone firmware, trusted root certificate
 
 This script is to create that last file for the IP Deskphone-specific configuration file: [USER_CONFIG]
 
+Feed the script a CSV with columns that minimally contain the MAC address of the phone (without colons or dashes) and the phone number that will be used to login.
+Note: you may need to edit the domain name in the script that gets appended to the end of the phone number. 
+
 ### Usage
 ```
 python cfg-generator sample-csv.csv
