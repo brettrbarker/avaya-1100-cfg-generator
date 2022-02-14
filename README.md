@@ -13,6 +13,8 @@ This script is to create that last file for the IP Deskphone-specific configurat
 Feed the script a CSV with columns that minimally contain the MAC address of the phone (without colons or dashes) and the phone number that will be used to login. The header rows should be titled "MAC" and "Phone", respectively.
 Note: you may need to edit the domain name in the script that gets appended to the end of the phone number. 
 
+In the CSV, there can be many entries for the same MAC address with different phone numbers. This will result in the phone numbers being ordered in ascending order and added as multiple line keys in the generated file. The max MAX_LOGINS parameter will be set equal to the number of phone numbers being auto logged in. 
+
 ### Usage
 ```
 python cfg-generator sample-csv.csv
