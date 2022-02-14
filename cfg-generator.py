@@ -8,8 +8,8 @@
 ## USAGE: python cfg-generator.py [csv input file]
 ## EXAMPLE: python cfg-generator.py AS5300configfiles.csv
 ## 
-## Version: 1.02
-## Updated: 2022-02-12
+## Version: 1.03
+## Updated: 2022-02-13
 ## Author: Brett Barker - brett.barker@brbtechsolutions.com 
 ########################################BRB####################################################
 
@@ -30,8 +30,10 @@ def main():
         print('Error: Too many arguments. The only argument should be the CSV file.')
         return
     
-    
+# CHANGE THESE VARIABLES    
     defaultPassword = 123456  #  SET THE DEFAULT PASSWORD FOR THE PHONE ACCOUNTS TO LOGIN WITH HERE
+    defaultDomain = 'uc.com' # SET THE DOMAIN AT THE END OF THE PHONE NUMBER USER ACCOUNT
+
     results_file_name = "cfg-results.txt"
     cwd = os.path.abspath(os.getcwd())
     now = datetime.datetime.now()
@@ -77,7 +79,7 @@ def main():
             file_contents = ['SLOW_START_200OK NO','ENABLE_LOCAL_ADMIN_UI NO','AUTO_UPDATE YES','AUTO_UPDATE_TIME 2200','MAX_LOGINS '+ str(maxlogins),'AUTOLOGIN_ENABLE 2']
             key = 1 # set initial line key number            
             for phonenumber in phonevalues:  # Loop through each phone number in the list for the given MAC and create auto login.
-                file_logins = file_logins + ['AUTOLOGIN_ID_KEY' + str(key).zfill(2) + ' '  + phonenumber + '@uc.mil']
+                file_logins = file_logins + ['AUTOLOGIN_ID_KEY' + str(key).zfill(2) + ' '  + phonenumber + '@' + defaultDomain]
                 file_logins = file_logins + ['AUTOLOGIN_PASSWD_KEY' + str(key).zfill(2) + ' ' + str(defaultPassword)]
                 key += 1
 
