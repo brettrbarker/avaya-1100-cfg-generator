@@ -1,13 +1,13 @@
 
 -----
-2022-02-13 21:19 Starting Config Generation
+2022-02-15 16:54 Starting Config Generation
 SUCCESS - Writing File SIP581626081234.cfg
 SUCCESS - Writing File SIP581626091235.cfg
 SUCCESS - Writing File SIP581626091236.cfg
 SUCCESS - Writing File SIP581626091237.cfg
 SUCCESS - Writing File SIP581626091238.cfg
 
----------- RESULTS FROM 2022-02-13 21:19 ----------
+---------- RESULTS FROM 2022-02-15 16:54 ----------
 Avaya 11xx Config files created from: sample-csv.csv
 Output files saved to: /home/brettrbarker/Documents/GitHub-Repos/avaya-1100-cfg-generator/output_files
 Successful files written: 5

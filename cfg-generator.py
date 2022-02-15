@@ -32,7 +32,7 @@ def main():
     
 # CHANGE THESE VARIABLES    
     defaultPassword = 123456  #  SET THE DEFAULT PASSWORD FOR THE PHONE ACCOUNTS TO LOGIN WITH HERE
-    defaultDomain = 'uc.com' # SET THE DOMAIN AT THE END OF THE PHONE NUMBER USER ACCOUNT
+    defaultDomain = 'example.org' # SET THE DOMAIN AT THE END OF THE PHONE NUMBER USER ACCOUNT
 
     results_file_name = "cfg-results.txt"
     cwd = os.path.abspath(os.getcwd())
