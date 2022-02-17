@@ -76,7 +76,7 @@ def main():
 
         else: # If the file doesn't exist, create it.
             maxlogins = len(phonevalues) # set max_login parameter to the number of phone numbers that will be auto-logged in.
-            file_contents = ['SLOW_START_200OK NO','ENABLE_LOCAL_ADMIN_UI NO','AUTO_UPDATE YES','AUTO_UPDATE_TIME 2200','MAX_LOGINS '+ str(maxlogins),'AUTOLOGIN_ENABLE 2']
+            file_contents = ['SLOW_START_200OK NO','ENABLE_LOCAL_ADMIN_UI NO','AUTO_UPDATE YES','AUTO_UPDATE_TIME 2200', 'AUTO_UPDATE_TIME_RANGE 3','MAX_LOGINS '+ str(maxlogins),'AUTOLOGIN_ENABLE 2']
             key = 1 # set initial line key number            
             for phonenumber in phonevalues:  # Loop through each phone number in the list for the given MAC and create auto login.
                 file_logins = file_logins + ['AUTOLOGIN_ID_KEY' + str(key).zfill(2) + ' '  + phonenumber + '@' + defaultDomain]
