@@ -1,3 +1,7 @@
+#cfg-generator
+output_files/
+cfg-results.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -20,7 +20,7 @@ import sys
 from collections import defaultdict
 
 
-def main():
+def cfgGenerate():
     ## Check for proper amount of arguments
     if len(sys.argv) < 2:
         print('Error: Missing argument. Enter CSV file as argument.')
@@ -114,4 +114,4 @@ def main():
     return
 
 if __name__=="__main__":
-    main()
+    cfgGenerate()
